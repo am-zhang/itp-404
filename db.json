@@ -1,0 +1,55 @@
+{
+  "artworks": [
+    {
+      "id": 0,
+      "title": "A Sunday on La Grande Jatte",
+      "artistId": 0,
+      "artist": "Edward Hopper",
+      "year": 1884,
+      "image": "https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg",
+      "alt_text": "Large painting of people in a crowded park, brushstrokes are dots."
+    },
+    {
+      "id": 1,
+      "title": "Nighthawks",
+      "artistId": 1,
+      "artist": "Georges Seurat",
+      "year": 1942,
+      "image": "https://www.artic.edu/iiif/2/831a05de-d3f6-f4fa-a460-23008dd58dda/full/843,/0/default.jpg",
+      "alt_text": "Scene in a diner, viewed through wrap-around glass windows, at night on an empty urban street. A light-skinned man and woman, he in a suit and she in a red dress, sit together at a triangular wood bar, eyes downcast. At left sits another man, his back to the viewer. Behind the counter is a light-skinned man in a white uniform. The interior lights cast a yellow glow that spills onto the street in pale green. Above the diner a sign reads, \"Phillies\"."
+    },
+    {
+      "id": 2,
+      "title": "Sky above Clouds IV",
+      "artistId": 2,
+      "artist": "Georgia O’Keeffe",
+      "year": 1965,
+      "image": "https://www.artic.edu/iiif/2/8fa4d1dd-b05f-eb8d-b83f-7b5dd65642db/full/843,/0/default.jpg",
+      "alt_text": "A work made of oil on canvas."
+    },
+    {
+      "id": 3,
+      "title": "American Gothic",
+      "artistId": 3,
+      "artist": "Grant Wood",
+      "year": 1930,
+      "image": "https://www.artic.edu/iiif/2/b272df73-a965-ac37-4172-be4e99483637/full/843,/0/default.jpg",
+      "alt_text": "Painting of a woman and an older white man holding a pitchfork, both seen from the waist up. They stand side by side with stern expressions, in front of a white house with a peaked roof."
+    },
+    {
+      "id": 4,
+      "title": "The Bedroom",
+      "artistId": 4,
+      "artist": "Vincent van Gogh",
+      "year": 1889,
+      "image": "https://www.artic.edu/iiif/2/25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e/full/843,/0/default.jpg",
+      "alt_text": "Painting of bedroom, blue walls, green window, tan bed, red bedding."
+    }
+  ],
+  "favorites": [
+    {
+      "artworkId": "0",
+      "timestamp": "2022-10-25T03:01:35-05:00"
+    }
+  ]
+}
