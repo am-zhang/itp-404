@@ -32,13 +32,10 @@ export function fetchFavorites() {
   return _fetch(`http://localhost:3001/favorites`);
 }
 
-export function addFavorite(id) {
+export function addFavorite(artwork) {
   return fetch("http://localhost:3001/favorites", {
     method: "POST",
-    body: JSON.stringify({
-      id: id,
-      timestamp: Date.now(),
-    }),
+    body: JSON.stringify(artwork),
     headers: {
       "Content-type": "application/json",
     },

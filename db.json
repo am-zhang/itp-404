@@ -48,8 +48,13 @@
   ],
   "favorites": [
     {
-      "artworkId": "0",
-      "timestamp": "2022-10-25T03:01:35-05:00"
+      "id": 1,
+      "title": "A Sunday on La Grande Jatte",
+      "artistId": 0,
+      "artist": "Edward Hopper",
+      "year": 1884,
+      "image": "https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg",
+      "alt_text": "Large painting of people in a crowded park, brushstrokes are dots."
     }
   ]
 }

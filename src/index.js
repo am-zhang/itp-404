@@ -12,6 +12,7 @@ import {
   fetchPost,
   fetchArtworks,
   fetchArtwork,
+  fetchFavorites,
 } from "./api";
 import Post from "./routes/Post";
 import Comments from "./routes/Comments";
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/bookmarks",
+        loader() {
+          return fetchFavorites();
+        },
         element: <Bookmarks />,
       },
       {

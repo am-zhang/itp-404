@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light mb-2">
+    <nav className="navbar navbar-expand bg-light mb-2">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           Art Institute of Chicago

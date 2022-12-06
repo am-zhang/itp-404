@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { addFavorite } from "./api";
+import { toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Card(props) {
+  const notify = (text) => toast(text);
+
   return (
     <div className="card mb-3">
       <div className="card-body">
@@ -25,12 +31,14 @@ export default function Card(props) {
             <h6 className="card-subtitle mb-2 text-muted">
               {props.artwork.year}
             </h6>
-            <FontAwesomeIcon icon={faBookmark} />
-            {/* <p className="card-text text-muted">{props.artwork.year}</p> */}
-            {/* <p className="card-text">{props.post.body.substring(0, 100)}...</p>
-            <Link to={`/posts/${props.post.id}`} className="card-link">
-              Read
-            </Link> */}
+            <button
+              onClick={(event) => {
+                notify('Added "' + props.artwork.title + '" to bookmarks!');
+                addFavorite(props.artwork);
+              }}
+            >
+              <FontAwesomeIcon icon={faBookmark} />
+            </button>
           </div>
         </div>
       </div>
