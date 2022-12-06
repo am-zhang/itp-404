@@ -2,6 +2,7 @@ import { Outlet, useLoaderData } from "react-router-dom";
 
 export default function Artwork() {
   const artwork = useLoaderData();
+
   return (
     <div className="post-page">
       <h1>{artwork.title}</h1>

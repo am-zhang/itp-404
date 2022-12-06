@@ -33,6 +33,7 @@ export function fetchFavorites() {
 }
 
 export function addFavorite(artwork) {
+  artwork["timestamp"] = Date.now();
   return fetch("http://localhost:3001/favorites", {
     method: "POST",
     body: JSON.stringify(artwork),
@@ -44,7 +45,8 @@ export function addFavorite(artwork) {
   });
 }
 
-export function deleteFavorite(id) {
+export function deleteFavorite(artwork) {
+  const id = artwork.id;
   return fetch(`http://localhost:3001/favorites/${id}`, {
     method: "DELETE",
   }).then((response) => {
