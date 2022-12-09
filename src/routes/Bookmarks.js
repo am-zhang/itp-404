@@ -24,13 +24,8 @@ export default function Bookmarks() {
       <div>
         {artworks.map((artwork) => {
           return (
-            <div>
-              <Card
-                artwork={artwork}
-                key={artwork.id}
-                onAdd={onAdd}
-                onDelete={onDelete}
-              />
+            <div key={artwork.id}>
+              <Card artwork={artwork} onAdd={onAdd} onDelete={onDelete} />
               <p>Added: {new Date(artwork.timestamp).toLocaleString()}</p>
             </div>
           );

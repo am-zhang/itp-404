@@ -8,7 +8,11 @@ export default function Artwork() {
       <h1>{artwork.title}</h1>
       <h4>{artwork.artist}</h4>
       <p>{artwork.year}</p>
-      <img src={artwork.image} alt={artwork.alt_text} />
+      <img
+        src={artwork.image}
+        alt={artwork.alt_text}
+        style={{ height: "500px" }}
+      />
 
       <Outlet />
     </div>

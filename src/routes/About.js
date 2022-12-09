@@ -6,8 +6,10 @@ export default function About() {
         This project borrows resources from the{" "}
         <a href="https://api.artic.edu/docs/" target="_blank">
           Art Institute of Chicago API
-        </a>
-        .
+        </a>{" "}
+        and was created by Amanda Zhang (
+        <a href="mailto: amzhang@usc.edu">amzhang@usc.edu</a>) for the ITP-404
+        Final Project assignment.
       </p>
     </div>
   );

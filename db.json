@@ -44,6 +44,69 @@
       "year": 1884,
       "image": "https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg",
       "alt_text": "Large painting of people in a crowded park, brushstrokes are dots."
+    },
+    {
+      "id": 6,
+      "title": "The Old Guitarist",
+      "artistId": 6,
+      "artist": "Pablo Picasso",
+      "year": 1903,
+      "image": "https://www.artic.edu/iiif/2/ddacae05-9279-51b5-e9ab-00024ae01e27/full/843,/0/default.jpg",
+      "alt_text": "Painting, mostly in shades of blue, of a thin, bent, older man wearing ragged clothes and sitting cross-legged playing a guitar positioned upright in his lap."
+    },
+    {
+      "id": 7,
+      "title": "Self-Portrait",
+      "artistId": 4,
+      "artist": "Vincent van Gogh",
+      "year": 1903,
+      "image": "https://www.artic.edu/iiif/2/26d3cea8-44c0-bfbd-a91a-19a007517152/full/843,/0/default.jpg",
+      "alt_text": "Painting of a red-haired, bearded man with light skin, painted in short brushstrokes and multicolored dots. The background is likewise a mass of small, closely spaced colored dots, these in green, blue, and red-orange."
+    },
+    {
+      "id": 8,
+      "title": "Arrival of the Normandy Train, Gare Saint-Lazare",
+      "artistId": 7,
+      "artist": "Claude Monet",
+      "year": 1877,
+      "image": "https://www.artic.edu/iiif/2/0f1cc0e0-e42e-be16-3f71-2022da38cb93/full/843,/0/default.jpg",
+      "alt_text": "Loosely painted image of an open-air train station. On the right, a parked train gives off an enormous plumb of white smoke, making the scene look as though it were full of clouds. A huddled mass of barely discernible people crowd around the train on both sides of the tracks. Blue, green, and gray tones dominate."
+    },
+    {
+      "id": 9,
+      "title": "Inventions of the Monsters",
+      "artistId": 8,
+      "artist": "Salvador Dalí",
+      "year": 1937,
+      "image": "https://www.artic.edu/iiif/2/be9551d4-860f-37a0-1408-086617f1824e/full/843,/0/default.jpg",
+      "alt_text": "Painting of stark landscape populated by strange figures, everyday objects, and a burning giraffe."
+    },
+    {
+      "id": 10,
+      "title": "The Bay of Marseille, Seen from L’Estaque",
+      "artistId": 9,
+      "artist": "Paul Cezanne",
+      "year": 1885,
+      "image": "https://www.artic.edu/iiif/2/d4ca6321-8656-3d3f-a362-2ee297b2b813/full/843,/0/default.jpg",
+      "alt_text": "Impressionist sea landscape, tan houses, blue ocean, distant mountains."
+    },
+    {
+      "id": 11,
+      "title": "Lozenge Composition with Yellow, Black, Blue, Red, and Gray",
+      "artistId": 10,
+      "artist": "Piet Mondrian",
+      "year": 1921,
+      "image": "https://www.artic.edu/iiif/2/25f660ee-f1db-d13b-42a5-56df97c98ba7/full/843,/0/default.jpg",
+      "alt_text": "A square white tile, rotated 90 degrees, crossed by black lines intersecting at 90-degree angles. A few of the shapes thus formed—some partial squares, some rectangles—are colored in a single shade of yellow, blue, black, or red."
+    },
+    {
+      "id": 12,
+      "title": "Woman before an Aquarium",
+      "artistId": 11,
+      "artist": "Henri Matisse",
+      "year": 1921,
+      "image": "https://www.artic.edu/iiif/2/d0e36029-27fc-bf4e-357a-55cfbaf7bdfd/full/843,/0/default.jpg",
+      "alt_text": "Painting of woman, arms crossed on brown desk, staring at goldfish."
     }
   ],
   "favorites": [

@@ -4,21 +4,21 @@ function _fetch(url) {
   });
 }
 
-export function fetchPosts() {
-  return _fetch("https://jsonplaceholder.typicode.com/posts?_expand=user");
-}
+// export function fetchPosts() {
+//   return _fetch("https://jsonplaceholder.typicode.com/posts?_expand=user");
+// }
 
-export function fetchPost(postId) {
-  return _fetch(
-    `https://jsonplaceholder.typicode.com/posts/${postId}?_expand=user&_embed=comments`
-  );
-}
+// export function fetchPost(postId) {
+//   return _fetch(
+//     `https://jsonplaceholder.typicode.com/posts/${postId}?_expand=user&_embed=comments`
+//   );
+// }
 
-export function fetchCommentsForPost(postId) {
-  return _fetch(
-    `https://jsonplaceholder.typicode.com/posts/${postId}/comments`
-  );
-}
+// export function fetchCommentsForPost(postId) {
+//   return _fetch(
+//     `https://jsonplaceholder.typicode.com/posts/${postId}/comments`
+//   );
+// }
 
 export function fetchArtworks() {
   return _fetch(`http://localhost:3001/artworks`);

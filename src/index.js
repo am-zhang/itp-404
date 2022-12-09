@@ -8,8 +8,8 @@ import About from "./routes/About";
 import Index from "./routes/Index";
 import Root from "./routes/Root";
 import {
-  fetchCommentsForPost,
-  fetchPost,
+  // fetchCommentsForPost,
+  // fetchPost,
   fetchArtworks,
   fetchArtwork,
   fetchFavorites,
@@ -44,11 +44,25 @@ const router = createBrowserRouter([
         element: <Bookmarks />,
       },
       {
-        path: "/artworks/:id", // :id is dynamic segment
-        loader({ params }) {
-          return fetchArtwork(params.id);
+        path: "/artworks",
+        loader() {
+          return fetchArtworks();
         },
-        element: <Artwork />,
+        children: [
+          {
+            path: "/artworks/:id",
+            loader({ params }) {
+              return fetchArtwork(params.id);
+            },
+            element: <Artwork />,
+          },
+        ],
+        // element: <Artwork />,
+        // path: "/artworks/:id",
+        // loader({ params }) {
+        //   return fetchArtwork(params.id);
+        // },
+        // element: <Artwork />,
         // children: [
         //   {
         //     path: "/posts/:id",
@@ -67,30 +81,30 @@ const router = createBrowserRouter([
         //   },
         // ],
       },
-      {
-        path: "/posts/:id", // :id is dynamic segment
-        loader({ params }) {
-          return fetchPost(params.id);
-        },
-        element: <Post />,
-        children: [
-          {
-            path: "/posts/:id",
-            element: <p>Make some new friends 💬</p>,
-          },
-          {
-            path: "/posts/:id/comments",
-            loader({ params }) {
-              return fetchCommentsForPost(params.id);
-            },
-            element: <Comments />,
-          },
-          {
-            path: "/posts/:id/comments/new",
-            element: <LeaveComment />,
-          },
-        ],
-      },
+      // {
+      //   path: "/posts/:id", // :id is dynamic segment
+      //   loader({ params }) {
+      //     return fetchPost(params.id);
+      //   },
+      //   element: <Post />,
+      //   children: [
+      //     {
+      //       path: "/posts/:id",
+      //       element: <p>Make some new friends 💬</p>,
+      //     },
+      //     {
+      //       path: "/posts/:id/comments",
+      //       loader({ params }) {
+      //         return fetchCommentsForPost(params.id);
+      //       },
+      //       element: <Comments />,
+      //     },
+      //     {
+      //       path: "/posts/:id/comments/new",
+      //       element: <LeaveComment />,
+      //     },
+      //   ],
+      // },
     ],
   },
 ]);
