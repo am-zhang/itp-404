@@ -109,6 +109,92 @@
       "alt_text": "Painting of woman, arms crossed on brown desk, staring at goldfish."
     }
   ],
+  "artists": [
+    {
+      "id": 1,
+      "name": "Georges Seurat",
+      "dates": "1859-1891",
+      "bio": "Inspired by recently published research in optical and color theory, Georges Seurat distinguished his art from what the Impressionists considered a more intuitive painting approach by developing his own “scientific” style called Pointillism. Tackling the issues of color, light, and form, Seurat’s method juxtaposed tiny dabs of colors to create hues that he believed, through optical blending, were more intense and luminous."
+    },
+    {
+      "id": 2,
+      "name": "Georgia O’Keeffe",
+      "dates": "1887-1986",
+      "bio": "One of the most influential American artists of the 20th century, Georgia O’Keeffe promoted new ideas of abstraction and helped redefine modern art. Best known for her paintings of flowers and plants—enlarged beyond life-size and precisely painted with bold colors—and for her spare and dramatic images inspired by the landscape of the Southwest, O’Keeffe also took inspiration in the aesthetic and architectural styles that she was exposed to during her time as a student at School of the Art Institute of Chicago."
+    },
+    {
+      "id": 3,
+      "name": "Grant Wood",
+      "dates": "1891-1942",
+      "bio": "Grant Wood is known for his stylized and subtly humorous scenes of rural people, Iowa cornfields, and mythic subjects from American history—such as the Art Institute’s iconic painting American Gothic (1930). Along with other Midwestern Regionalist painters like John Steuart Curry and Thomas Hart Benton, Wood advocated for a realistic style and recognizable subjects that showed local places and common people, a radically different approach from European modernism and its push toward abstraction."
+    },
+    {
+      "id": 4,
+      "name": "Vincent van Gogh",
+      "dates": "1853-1890",
+      "bio": "During Vincent van Gogh’s tumultuous career as a painter, he created a revolutionary style characterized by exaggerated forms, a vivid color palette, and loose, spontaneous handling of paint. Although he only actively pursued his art for five years before his death in 1890, his impact has lived on through his works."
+    },
+    {
+      "id": 5,
+      "name": "Edward Hopper",
+      "dates": "1882-1967",
+      "bio": "Edward Hopper was an American realist painter and printmaker. While he is widely known for his oil paintings, he was equally proficient as a watercolorist and printmaker in etching."
+    },
+    {
+      "id": 6,
+      "name": "Pablo Picasso",
+      "dates": "1881-1973",
+      "bio": "The artistic genius of Pablo Picasso has impacted the development of modern and contemporary art with unparalleled magnitude. His prolific output includes over 20,000 paintings, prints, drawings, sculptures, ceramics, theater sets and costumes that convey myriad intellectual, political, social, and amorous messages. His creative styles transcend realism and abstraction, Cubism, Neoclassicism, Surrealism, and Expressionism."
+    },
+    {
+      "id": 7,
+      "name": "Claude Monet",
+      "dates": "1840-1926",
+      "bio": "Claude Monet was a pioneer of the French artistic movement known as Impressionism. Throughout his long career, Monet portrayed the people closest to him and the places he knew best. He favored family and friends as models, often working and exhibiting alongside fellow artists. In the early years he painted the forests of Fountainbleau, Parisian boulevards, suburban villages along the Seine, seaside towns, and flowering fields, and later, after buying a house at Giverny northwest of Paris, stacks of wheat and water lilies. Monet was a proponent of plein air painting, working directly out-of-doors on compositions he would later revise and sometimes complete in his studio. He painted his beloved water lilies in Giverny, where he tended to a water garden and a small pond spanned by a Japanese footbridge. Another favorite subject, meules (stacks of wheat sometimes referred to as “haystacks”), were for Monet a resonant symbol of sustenance and survival—constructed by humans but created by nature."
+    },
+    {
+      "id": 8,
+      "name": "Salvador Dalí",
+      "dates": "1904-1989",
+      "bio": "An author, artist and provocateur, Salvador Dalí was one of the most notable figures of the Surrealist movement. Born in 1904 in Figueras, Catalonia, Dalí studied art in Madrid and Barcelona, where he demonstrated masterful painting skills and experimented with several artistic styles."
+    },
+    {
+      "id": 9,
+      "name": "Paul Cezanne",
+      "dates": "1839-1906",
+      "bio": "One of the most influential artists in the history of modern painting, Paul Cézanne has inspired generations of artists. Generally categorized as a Post-Impressionist, his unique method of building form with color and his analytical approach to nature influenced the art of Cubists, Fauves, and successive generations of avant-garde artists. Beginning to paint in 1860 in his birthplace of Aix-en-Provence and subsequently studying in Paris, Cézanne’s early pictures of romantic and classical themes are imbued with dark colors and executed with an expressive brushwork in the tradition of Eugène Delacroix (1798–1863)."
+    },
+    {
+      "id": 10,
+      "name": "Piet Mondrian",
+      "dates": "1872-1944",
+      "bio": "Piet Mondrian was born Pieter Cornelis Mondriaan, Jr., on March 7, 1872, in Amersfoort, the Netherlands. He studied at the Rijksakademie van Beeldende Kunsten, Amsterdam, from 1892 to 1897. Until 1908, when he began to take annual trips to Domburg in Zeeland, Mondrian’s work was naturalistic—incorporating successive on influences of academic landscape and still-life painting, Dutch Impressionism, and Symbolism."
+    },
+    {
+      "id": 11,
+      "name": "Henri Matisse",
+      "dates": "1869-1954",
+      "bio": "The remarkable career of Henri Matisse, one of the most influential artists of the twentieth century, whose stylistic innovations (along with those of Pablo Picasso) fundamentally altered the course of modern art and affected the art of several generations of younger painters, spanned almost six and a half decades. His vast oeuvre encompassed painting, drawing, sculpture, graphic arts (as diverse as etchings, linocuts, lithographs, and aquatints), paper cutouts, and book illustration. His varied subjects comprised landscape, still life, portraiture, domestic and studio interiors, and particularly focused on the female figure."
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "body": "hello"
+    },
+    {
+      "id": 1,
+      "body": "placeholder"
+    },
+    {
+      "id": 2,
+      "body": "abc"
+    },
+    {
+      "body": "try",
+      "id": 3
+    }
+  ],
   "favorites": [
     {
       "id": 3,
