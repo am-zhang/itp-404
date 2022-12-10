@@ -5,7 +5,7 @@ export default function Artists() {
   const artists = useLoaderData();
   return (
     <div className="artist-page">
-      <h1>Artists</h1>
+      <h1 data-testid="artist-heading">Artists</h1>
       <div>
         {artists.map((artist) => {
           return (

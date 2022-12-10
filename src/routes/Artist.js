@@ -7,10 +7,16 @@ export default function Artist(props) {
             <h2 className="card-title" data-testid="artist-name">
               {props.artist.name}
             </h2>
-            <h6 className="card-subtitle mb-2 text-muted">
+            <h6
+              className="card-subtitle mb-2 text-muted"
+              data-testid="artist-dates"
+            >
               {props.artist.dates}
             </h6>
-            <h6 className="card-subtitle mb-2 text-muted">
+            <h6
+              className="card-subtitle mb-2 text-muted"
+              data-testid="artist-bio"
+            >
               {props.artist.bio}
             </h6>
           </div>
