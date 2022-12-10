@@ -1,7 +1,10 @@
 import { Outlet, useLoaderData } from "react-router-dom";
+import { useState } from "react";
+import Modal from "../Modal";
 
 export default function Artwork() {
   const artwork = useLoaderData();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="post-page">
@@ -12,7 +15,20 @@ export default function Artwork() {
         src={artwork.image}
         alt={artwork.alt_text}
         style={{ height: "500px" }}
+        onClick={() => {
+          setIsModalOpen(!isModalOpen);
+        }}
       />
+      {isModalOpen && (
+        <Modal
+          artwork={artwork}
+          onClose={() => {
+            setIsModalOpen(false);
+          }}
+        >
+          <p>Modal body goes here.</p>
+        </Modal>
+      )}
 
       <Outlet />
     </div>
