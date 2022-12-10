@@ -1,4 +1,4 @@
-import { Form, useLoaderData, useParams, useNavigate } from "react-router-dom";
+import { Form, useLoaderData, useParams } from "react-router-dom";
 
 export default function Comments() {
   const comments = useLoaderData();

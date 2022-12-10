@@ -23,12 +23,12 @@ import {
   fetchFavorites,
 } from "./api";
 import Comments from "./routes/Comments";
-// import LeaveComment from "./routes/LeaveComment";
 import Bookmarks from "./routes/Bookmarks";
 import Artwork from "./routes/Artwork";
 import Artists from "./routes/Artists";
 import EditComment from "./routes/EditComment";
 import LeaveComment from "./routes/LeaveComment";
+import Admin from "./routes/Admin";
 import { toast } from "react-toastify";
 
 const router = createBrowserRouter([
@@ -53,6 +53,13 @@ const router = createBrowserRouter([
           return fetchFavorites();
         },
         element: <Bookmarks />,
+      },
+      {
+        path: "/admin",
+        loader() {
+          return fetchComments();
+        },
+        element: <Admin />,
       },
       {
         path: "/artworks",
@@ -120,14 +127,9 @@ const router = createBrowserRouter([
           return request.formData().then((formData) => {
             return updateComment(params.commentId, formData.get("body")).then(
               () => {
-                // toast.success("You successfully updated the post.");
                 return redirect(`/artists/comments`);
               }
-              // () => {
-              //   toast.error("Uh oh!");
-              // }
             );
-            // ();
           });
         },
       },

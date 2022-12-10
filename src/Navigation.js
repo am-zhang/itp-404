@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, createBrowserRouter } from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -22,6 +22,11 @@ export default function Navigation() {
             <li className="nav-item">
               <Link to="/about" className="nav-link">
                 About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/admin" className="nav-link">
+                Admin
               </Link>
             </li>
           </ul>
