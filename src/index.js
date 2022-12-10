@@ -29,6 +29,7 @@ import Artwork from "./routes/Artwork";
 import Artists from "./routes/Artists";
 import EditComment from "./routes/EditComment";
 import LeaveComment from "./routes/LeaveComment";
+import { toast } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -89,8 +90,8 @@ const router = createBrowserRouter([
               return request.formData().then((formData) => {
                 return saveComment(formData.get("comment"), params.id).then(
                   () => {
-                    // toast.success("Your comment was successfully posted.");
-                    return redirect(`/comments/${params.id}`);
+                    toast.success("Your comment was successfully posted.");
+                    return redirect(`/artists/comments`);
                   }
                 );
               });
@@ -103,10 +104,8 @@ const router = createBrowserRouter([
         action({ request, params }) {
           return request.formData().then((formData) => {
             return deleteComment(params.commentId).then(() => {
-              // toast.success("Your comment was deleted.");
-
-              // const postId = formData.get("postId");
-              return redirect(`/comments/${params.commentId}`);
+              toast.success("Your comment was deleted.");
+              return redirect(`/artists/comments`);
             });
           });
         },
@@ -115,23 +114,20 @@ const router = createBrowserRouter([
         path: "/comments/:commentId/edit",
         element: <EditComment />,
         loader({ params }) {
-          return fetchComment(params.id);
+          return fetchComment(params.commentId);
         },
         action({ request, params }) {
           return request.formData().then((formData) => {
-            return updateComment(
-              params.postId,
-              formData.get("title"),
-              formData.get("body")
-            )
-              .then
-              // () => {
-              //   toast.success("You successfully updated the post.");
-              // },
+            return updateComment(params.commentId, formData.get("body")).then(
+              () => {
+                // toast.success("You successfully updated the post.");
+                return redirect(`/artists/comments`);
+              }
               // () => {
               //   toast.error("Uh oh!");
               // }
-              ();
+            );
+            // ();
           });
         },
       },

@@ -1,4 +1,4 @@
-import { Form, useLoaderData, useParams } from "react-router-dom";
+import { Form, useLoaderData, useParams, useNavigate } from "react-router-dom";
 
 export default function Comments() {
   const comments = useLoaderData();
@@ -12,17 +12,22 @@ export default function Comments() {
           <div key={comment.id}>
             <p>{comment.body}</p>
 
-            <Form method="post" action={`/comments/${comment.id}/destroy`}>
+            <Form
+              method="post"
+              action={`/comments/${comment.id}/destroy`}
+              style={{ display: "inline-block" }}
+            >
               <input type="hidden" name="postId" value={postId} />
               <button type="submit" className="btn btn-sm btn-danger">
                 Delete
               </button>
             </Form>
-            <Form method="post" action={`/comments/${comment.id}/update`}>
+            <Form
+              action={`/comments/${comment.id}/edit`}
+              style={{ display: "inline-block" }}
+            >
               <input type="hidden" name="postId" value={postId} />
-              <button type="submit" className="btn btn-sm btn-secondary">
-                Update
-              </button>
+              <button className="btn btn-sm btn-secondary">Update</button>
             </Form>
             <hr />
           </div>
